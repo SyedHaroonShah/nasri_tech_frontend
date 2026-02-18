@@ -1,0 +1,91 @@
+/* ===============================
+   FOOTER - PROFESSIONAL DESIGN
+================================= */
+
+.footer {
+  background: linear-gradient(135deg, #111827, #1e293b);
+  color: #cbd5f5;
+  padding: 40px 32px;
+  text-align: center;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+/* Decorative top line */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border-radius: 0 0 4px 4px;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+.footer p:first-of-type {
+  font-weight: 600;
+  font-size: 16px;
+  color: #e2e8f0;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.footer p:hover {
+  color: #cbd5f5;
+}
+
+/* Contact info styling */
+.footer p:last-child {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  min-width: 250px;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 600px) {
+  .footer {
+    padding: 32px 24px;
+    margin-top: 60px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  .footer p:first-of-type {
+    font-size: 15px;
+  }
+}
+
+/* ===============================
+   SUBTLE ANIMATION
+================================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  animation: fadeInUp 0.6s ease-out;
+}
